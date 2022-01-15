@@ -43,6 +43,7 @@ background-color: #312D64 ;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 5px;
 }
 
 .contenantCol {
@@ -51,19 +52,18 @@ background-color: #312D64 ;
     padding: 5px;
 	display: flex;
 	justify-content: center;
-	align-items: center;
+    align-items: center;   
 }
 
 .containerTofill {
-	background-color: #EDEDED;
+    background-color: #EDEDED;
     display: flex;
     flex-flow: column;
     height: 100%;
-	padding-left: 5px;
-    padding-right: 5px;
-    padding-top: 5px;
-    padding-bottom: 5px;
 }
+
+
+
 
 .tobottom {
 flex-grow : 1 ;
@@ -105,25 +105,28 @@ flex-grow : 1 ;
 }
 
 .contenuColBasContent {
-    border: 1px solid #555 ;
-    background-color: #EDEDED ;
-    /*border-radius: 5px ; */
-    display: flex ;
-    justify-content: center ;
-    align-items: center ;
-	height:150px ;
-	margin-bottom : 5px ;
+    border: 1px solid #555;
+    background-color: #EDEDED;    
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    height: 150px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    width: 932px;
 }
 
 .contenuColBasNav {
-    border: 1px solid #555 ;
-    background-color: #EDEDED ;
-    /*border-radius: 5px ; */
-    display: flex ;
-    justify-content: center ;
-    align-items: center ;
-	height:100px ;
-	margin-bottom : 5px ;
+    border: 1px solid #555;         
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;    
+    margin-bottom: 5px;
+    height: 120px;
 }
 
 .contenuColBasBody {
