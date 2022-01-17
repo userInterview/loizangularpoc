@@ -12,7 +12,8 @@ export class AppComponent implements OnInit{
 
   title = 'flaws Projects Management';  
   menujson: any = (menufile as any).default;
-  titregauche : String = '';
+  titregauche : string = '';
+  titredroite : string = '' ;
 
   constructor() { 
 
@@ -20,13 +21,8 @@ export class AppComponent implements OnInit{
 
   ngOnInit(): void {
     console.log("ngOnInit \"AppComponent\"") ; 
-    /*console.log(menufile);
-    console.log("this.menujson : ", this.menujson) ;
-    console.log("this.menujson[0] : ", this.menujson[0]) ;*/
-    console.log("this.menujson[0].entete[0].titregauche : ", this.menujson[0].entete[0].titregauche) ;
     this.titregauche = this.menujson[0].entete[0].titregauche ;
-    //default[0].entete[""0""].titregauche
-    //menufile["0"].entete["0"].titregauche
+    this.titredroite = this.menujson[0].entete[0].titredroite ;
   }
 
 } 
