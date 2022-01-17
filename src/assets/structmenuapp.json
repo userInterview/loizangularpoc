@@ -1,0 +1,85 @@
+[
+  {
+    "entete": [
+      {
+        "titregauche": "Failles produits",
+        "titredroite": ""
+      }
+    ]
+  },
+  {
+    "menugauche1": [
+      {
+        "titre": ""
+      },
+      {
+        "soustitre": [
+          {
+            "titre1": "",
+            "titre2": ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "menugauche2": [
+      {
+        "titre": ""
+      },
+      {
+        "soustitre": [
+          {
+            "titre1": "",
+            "titre2": ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "menugauche3": [
+      {
+        "titre": ""
+      },
+      {
+        "soustitre": [
+          {
+            "titre1": "",
+            "titre2": ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "menugauche4": [
+      {
+        "titre": ""
+      },
+      {
+        "soustitre": [
+          {
+            "titre1": "",
+            "titre2": ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "menugauche5": [
+      {
+        "titre": ""
+      },
+      {
+        "soustitre": [
+          {
+            "titre1": "",
+            "titre2": ""
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -20,7 +20,7 @@ background-color: #312D64 ! important;
 border: 2px solid #B22222;
 border-radius: 5px;
 overflow: auto;
-height:700px ;
+height:720px ;
 display: flex;
 flex-flow: column ;
 background-color: #312D64 ;
@@ -113,9 +113,8 @@ flex-grow : 1 ;
     -webkit-box-align: center;
     align-items: center;
     height: 150px;
-    margin-bottom: 5px;
-    margin-right: 5px;
-    width: 932px;
+    margin-bottom: 5px;    
+    width: 935px;
 }
 
 .contenuColBasNav {
