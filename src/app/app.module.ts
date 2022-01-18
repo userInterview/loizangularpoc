@@ -5,10 +5,11 @@ import { AppRoutingModule } from './app-routing.module';
 //composants template
 import { AppComponent } from './app.component';
 import { CompmainbasComponent } from './compmainbas/compmainbas.component';
+import { VueappelhttpComponent } from './compmainbas/vueappelhttp/vueappelhttp.component' ;
 
 //composant service
 import {LoizservhttpService} from './loizservhttp.service';
-import { VueappelhttpComponent } from './compmainbas/vueappelhttp/vueappelhttp.component' ;
+import {HelperService} from './helper/helper.service' ;
 
 @NgModule({
   declarations: [
@@ -20,7 +21,7 @@ import { VueappelhttpComponent } from './compmainbas/vueappelhttp/vueappelhttp.c
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [LoizservhttpService],
+  providers: [LoizservhttpService, HelperService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
