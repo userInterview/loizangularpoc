@@ -1,12 +1,12 @@
 import { TestBed } from '@angular/core/testing';
 
-import { ServicelabelService } from './servicelabel.service';
+import { HelperService } from './helper.service';
 
 describe('ServicelabelService', () => {
   beforeEach(() => TestBed.configureTestingModule({}));
 
   it('should be created', () => {
-    const service: ServicelabelService = TestBed.get(ServicelabelService);
+    const service: HelperService = TestBed.get(HelperService);
     expect(service).toBeTruthy();
   });
 });

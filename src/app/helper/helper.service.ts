@@ -2,12 +2,12 @@ import { Injectable } from '@angular/core';
 
 import * as menufile from '../../assets/structmenuapp.json';
 
-
+  
 @Injectable({
   providedIn: 'root'
-})
+})  
 export class HelperService {
-
+ 
   menujson: any = (menufile as any).default;
 
   constructor() { }
