@@ -26,9 +26,11 @@
 			<div class="col-md-10 contenuCol">	
 				<div class="container containerTofill">
 					<div class="row  contenuColBasContent">
-						<span>Column 2.2</span>
+						<p>Column 2.2</p>						
+						<p><button (click)='setMemInputLoiz();'>setMemInputLoiz()</button></p>
+						<div>parentMemInputLoiz : {{parentMemInputLoiz}}</div>				
 					</div>
-					<app-compmainbas></app-compmainbas>
+					<app-compmainbas [enfMemInputLoiz] = "parentMemInputLoiz"></app-compmainbas>
 				</div>  		  
 			</div>		
 	</div>  

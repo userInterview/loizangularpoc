@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { ViewEncapsulation } from '@angular/core';
+import { Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-compmainbas',
@@ -13,9 +14,8 @@ export class CompmainbasComponent implements OnInit {
   i : number ;
   j : number ;
   contenu : string ;
-   /*fromcomp: string ;
-  fromhtml: string ;
-  fromboth: string ;*/
+  @Input()
+  enfMemInputLoiz = '';
 
   @Input()
   attrbut : string ;
@@ -56,5 +56,14 @@ export class CompmainbasComponent implements OnInit {
   setMemBStyle():void {
     this.membstyle = {"color":"blue"} ;
   }
+
+  //Cet atr
+  /*@Output() 
+  memLoizOutput : EventEmitter<string> ;
+
+  setLoizOutput(value: string) {
+    this.memLoizOutput = new EventEmitter<string>() ;
+    this.memLoizOutput.emit(value);
+  }*/
 
 }

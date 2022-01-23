@@ -12,14 +12,20 @@
                 console.log(attrStyle.toString()) ;
             };
         </script>-->
-        <p><button (click)='setInnerHtml();'>setInnerHtml()</button></p>
-        <span [innerHTML]='contenu'></span>     
+        <p><button (click)="setInnerHtml();">setInnerHtml()</button></p>
+        <span [innerHTML]="contenu"></span>     
 
-        <p><button (click)='readstyle();'>readstyle()</button></p>
+        <p><button (click)="readstyle();">readstyle()</button></p>
         <div id ="mondiv" style="color:green;display: table-cell; vertical-align: middle;text-align:center;height:40px;width:200px;background-color:blue;color:white">This is a paragraph.</div>
 
-        <p><button (click)='setMemBStyle();'>setMemBStyle()</button></p>
+        <p><button (click)="setMemBStyle();">setMemBStyle()</button></p>
         <div [ngStyle]= "membstyle">Loiz on way binding</div>
+
+        enfMemInputLoiz : {{enfMemInputLoiz}}
+
+        <!--<p><button (click)="setLoizOutput('chaine pour envoyer au parent');">setLoizOutput()</button></p>
+        <div>{{memLoizOutput}}</div>-->
+
       <!--
         <p (fromcomp)=""></p>
         <p [fromhtml]=""></p>
