@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnChanges } from '@angular/core';
 import { ViewEncapsulation } from '@angular/core';
 import * as menufile from '../assets/structmenuapp.json';
 import {HelperService} from './helper/helper.service'
@@ -10,7 +10,8 @@ import { Input } from '@angular/core';
   styleUrls: ['./app.component.css'],
   encapsulation: ViewEncapsulation.None
 })
-export class AppComponent implements OnInit{
+export class AppComponent implements OnInit, OnChanges{
+
   
   titregauche : string = '' ;
   titredroite : string = '' ;
@@ -36,5 +37,13 @@ export class AppComponent implements OnInit{
     this.parentMemInputLoiz = 'initialisation par clique No ' + this.i + ' fois.';
     this.i = this.i + 1 ;
   } 
+
+  getChildOutput(event) {
+    console.log(event);
+  }
+
+  ngOnChanges(changes: import("@angular/core").SimpleChanges): void {
+   console.log("App.commponent a changé !") ;
+  }
 
 } 

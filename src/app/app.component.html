@@ -30,7 +30,10 @@
 						<p><button (click)='setMemInputLoiz();'>setMemInputLoiz()</button></p>
 						<div>parentMemInputLoiz : {{parentMemInputLoiz}}</div>				
 					</div>
-					<app-compmainbas [enfMemInputLoiz] = "parentMemInputLoiz"></app-compmainbas>
+					<app-compmainbas 
+						 [enfMemInputLoiz] = "parentMemInputLoiz"
+						 (memLoizOutput) = "getChildOutput($event)"					
+					></app-compmainbas>
 				</div>  		  
 			</div>		
 	</div>  

@@ -13,6 +13,7 @@ export class CompmainbasComponent implements OnInit {
 
   i : number ;
   j : number ;
+  k : number ;
   contenu : string ;
   @Input()
   enfMemInputLoiz = '';
@@ -27,6 +28,7 @@ export class CompmainbasComponent implements OnInit {
   ngOnInit() {
     this.i = 0 ;
     this.j = 0 ;
+    this.k = 0 ;
   }
 
   cliquer():void {
@@ -57,13 +59,14 @@ export class CompmainbasComponent implements OnInit {
     this.membstyle = {"color":"blue"} ;
   }
 
-  //Cet atr
-  /*@Output() 
-  memLoizOutput : EventEmitter<string> ;
+  //Cet attribut sera envoyé au parent
+  @Output() 
+  memLoizOutput = new EventEmitter<string>() ;
 
-  setLoizOutput(value: string) {
-    this.memLoizOutput = new EventEmitter<string>() ;
-    this.memLoizOutput.emit(value);
-  }*/
+  setLoizOutput():void {
+    this.k = this.k+1 ;    
+    console.log("<setLoizOutput> : - envoi vers parent No " + this.k);
+    this.memLoizOutput.emit(": - envoi vers parent No " + this.k);
+  }
 
 }
