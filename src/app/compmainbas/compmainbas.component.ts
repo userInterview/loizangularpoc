@@ -64,9 +64,11 @@ export class CompmainbasComponent implements OnInit {
   memLoizOutput = new EventEmitter<string>() ;
 
   setLoizOutput():void {
-    this.k = this.k+1 ;    
-    console.log("<setLoizOutput> : - envoi vers parent No " + this.k);
-    this.memLoizOutput.emit(": - envoi vers parent No " + this.k);
+    this.k = this.k+1 ;        
+    this.memLoizOutput.emit("envoi depuis compmainbas.componants.ts vers parent app.componant.ts  - No " + this.k);
   }
+
+  @Input()
+  loizInheritedMethodForChild = ():void  => { } ;
 
 }

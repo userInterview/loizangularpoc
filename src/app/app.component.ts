@@ -20,6 +20,11 @@ export class AppComponent implements OnInit, OnChanges{
   @Input()
   parentMemInputLoiz = '';
 
+  @Input()
+  loizParentMethodForChild = ():void  => {
+    console.log("<loizParentMethodForChild> : journalisation dans le parent") ;
+  } ;
+
   constructor(helperService : HelperService) { 
 
   }
