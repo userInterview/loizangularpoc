@@ -70,11 +70,10 @@ flex-grow : 1 ;
 }
 
 .tobottomnav {
-	border: 1px solid #555;
-	flex-grow : 1 ;
-    display: flex ;
-    justify-content: center ;
-    align-items: center ;	
+    border: 1px solid #555;
+    height: 487px;
+    margin-right: -15px;
+    margin-left: -15px;
 }
 
 .tobottomcontent {
@@ -125,7 +124,7 @@ flex-grow : 1 ;
     -webkit-box-align: center;
     align-items: center;    
     margin-bottom: 5px;
-    height: 120px;
+    height: 150px;
 }
 
 .contenuColBasBody {

@@ -9,13 +9,15 @@ import { VueappelhttpComponent } from './compmainbas/vueappelhttp/vueappelhttp.c
 
 //composant service
 import {LoizservhttpService} from './loizservhttp.service';
-import {HelperService} from './helper/helper.service' ;
+import {HelperService} from './helper/helper.service';
+import { CellulenavgaucheComponent } from './cellulenavgauche/cellulenavgauche.component' ;
 
 @NgModule({
   declarations: [
     AppComponent,
     CompmainbasComponent,
-    VueappelhttpComponent
+    VueappelhttpComponent,
+    CellulenavgaucheComponent
   ],
   imports: [
     BrowserModule,
