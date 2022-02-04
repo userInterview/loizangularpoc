@@ -1,0 +1,44 @@
+[
+    {
+      "entete": [
+        {
+          "titregauche": "Failles produits",
+          "titredroite": "Project Flaws Monitor"
+        }
+      ]
+    }
+    ,
+    {"listemenugauche" : [
+              {
+                "menugauche1": [
+                  {
+                    "titre": "Tous projets"
+                  },
+                  {
+                    "soustitre": [
+                      {
+                        "titre1": "Liste Failles",
+                        "titre2": "Liste produits"
+                      }
+                    ]
+                  }
+                ]
+              },
+                          {
+                "menugauche2": [
+                  {
+                    "titre": "Mes projets"
+                  },
+                  {
+                    "soustitre": [
+                      {
+                        "titre1": "Saisie Projets",
+                        "titre2": "Saisie Produits"
+                      }
+                    ]
+                  }
+                ]
+              }
+          ]
+    }
+  ]
