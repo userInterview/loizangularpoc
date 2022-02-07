@@ -17,8 +17,8 @@
                   {
                     "soustitre": [
                       {
-                        "titre1": "Liste Failles",
-                        "titre2": "Liste produits"
+                        "sstitre1": "Liste Failles",
+                        "sstitre2": "Liste produits"
                       }
                     ]
                   }
@@ -32,8 +32,8 @@
                   {
                     "soustitre": [
                       {
-                        "titre1": "Saisie Projets",
-                        "titre2": "Saisie Produits"
+                        "sstitre1": "Saisie Projets",
+                        "sstitre2": "Saisie Produits"
                       }
                     ]
                   }

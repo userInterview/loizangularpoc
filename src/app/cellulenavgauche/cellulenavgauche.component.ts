@@ -30,11 +30,35 @@ export class CellulenavgaucheComponent implements OnInit, AfterViewInit{
       console.log("strEleMenu[i]", labeltree[key]) ;
       let objMenu = labeltree[key] ; 
       
-      for (let key in objMenu) {
-        console.log("key", key);
+      for (let keyMenuGlobal in objMenu) {
+        console.log("keyMenuGlobal", keyMenuGlobal);
         if (key=="listemenugauche")  //on est sur le noeud d'information menu gauche
             console.log("on est sur listemenugauche");   
-      }      
+            console.log("objMenu[keyMenu] vaut :", objMenu[keyMenuGlobal]) ;
+            const objMenuGauche : any = objMenu[keyMenuGlobal] ;
+            //On parcours la liste des rubrique
+            for (let keyMenuGauche in objMenuGauche) {
+                const rubrique : any = objMenuGauche[keyMenuGauche]
+                console.log("rubrique", rubrique );
+                console.log("JSON.stringify(rubrique)",JSON.stringify(rubrique)) ;
+            
+              for (let keyContenu in rubrique) {
+                const titreOuSsTitre: any = rubrique[keyContenu];
+                if (titreOuSsTitre.hasOwnProperty("titre"))
+                  console.log("<titreOuSsTitre.titre>", titreOuSsTitre.titre);
+                else if (titreOuSsTitre.hasOwnProperty("soustitre"))
+                  console.log("<titreOuSsTitre.soustitre>", titreOuSsTitre.soustitre);
+                else
+                  console.log("titreOuSsTitre", titreOuSsTitre);
+
+                for (let keyEntry in titreOuSsTitre) {
+                  const entry: any = titreOuSsTitre[keyEntry];
+                  console.log("JSON.stringify(entry)", JSON.stringify(entry));
+
+                }
+              }
+            }
+      }
     }
   }
 
