@@ -10,14 +10,16 @@ import { VueappelhttpComponent } from './compmainbas/vueappelhttp/vueappelhttp.c
 //composant service
 import {LoizservhttpService} from './loizservhttp.service';
 import {HelperService} from './helper/helper.service';
-import { CellulenavgaucheComponent } from './cellulenavgauche/cellulenavgauche.component' ;
+import { CellulenavgaucheComponent } from './cellulenavgauche/cellulenavgauche.component';
+import { CustdirmenuDirective } from './cellulenavgauche/dirtives/custdirmenu.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
     CompmainbasComponent,
     VueappelhttpComponent,
-    CellulenavgaucheComponent
+    CellulenavgaucheComponent,
+    CustdirmenuDirective
   ],
   imports: [
     BrowserModule,
