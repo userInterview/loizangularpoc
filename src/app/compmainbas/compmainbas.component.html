@@ -1,42 +1,5 @@
 		
     <div class="row  bottomcontentmainbas">                                
-        <span>Column 3.2</span>                                
-       <!-- <p><button (click)='cliquer()'>cliquer() depuis le dom</button></p><br />
-
-        <p><button attrbut='setattr()'>setattr() depuis le composant</button></p>
-        <p><button (attrbut)='setattr()'>setattr() depuis le composant</button></p>-->
-        <!--<script>
-            function changestyle() {
-                var objdiv = document.getElementById("mondiv") ;
-                var attrStyle = objdiv.getAttribute("style") ;
-                console.log(attrStyle.toString()) ;
-            };
-        </script>-->
-        <p><button (click)="setInnerHtml();">setInnerHtml()</button></p>
-        <span [innerHTML]="contenu"></span>     
-
-        <p><button (click)="readstyle();">readstyle()</button></p>
-        <div id ="mondiv" style="color:green;display: table-cell; vertical-align: middle;text-align:center;height:40px;width:200px;background-color:blue;color:white">This is a paragraph.</div>
-
-        <p><button (click)="setMemBStyle();">setMemBStyle()</button></p>
-        <div [ngStyle]= "membstyle">Loiz on way binding</div>
-
-        <p>Input enfMemInputLoiz vaut : "{{enfMemInputLoiz}}"</p>
-
-        <p><button (click)="setLoizOutput()">setLoizOutput()</button></p>
-        <div>Output memLoizOutput vaut "{{memLoizOutput}}"</div>
-
-        <p><button (click)="loizInheritedMethodForChild()">loizInheritedMethodForChild()</button></p>
-        <div>Output loizInheritedMethodForChild vaut "{{loizInheritedMethodForChild}}"</div>
-      
-        <!--
-        <p (fromcomp)=""></p>
-        <p [fromhtml]=""></p>
-        <p [(fromboth)]=""></p>
-
-        <p>Valeur dans l'instance du composant :</p>
-        fromcomp: {{fromcomp}}<br />
-        fromhtml: {{fromhtml}}<br />
-        fromboth: {{fromboth}}<br />
-        //-->
+        <span>Column 3.2</span>          
+        <router-outlet></router-outlet>    
     </div>

@@ -2,12 +2,12 @@
   <div class="row rangeeHaute">	
 		<div class="col-md-2 contenantCol">
 			<div class="col-md-12 contenuCol">
-				<span>{{titregauche}}</span>
+				<!--<span>{{titregauche}}</span>-->
 			</div>
 		</div>				
 		<div class="col-md-10 contenantCol">
 			<div class="col-md-12 contenuCol">
-				<span>{{titredroite}}</span>
+				<!--<span>{{titredroite}}</span>-->
 			</div>
 		</div>
   </div> 
@@ -25,15 +25,9 @@
 			<div class="col-md-10 contenuCol">	
 				<div class="container containerTofill">
 					<div class="row  contenuColBasContent">
-						<p>Column 2.2</p>						
-						<p><button (click)='setMemInputLoiz();'>setMemInputLoiz()</button></p>
-						<div>parentMemInputLoiz : {{parentMemInputLoiz}}</div>				
+						<p>Column 2.2</p>									
 					</div>
-					<app-compmainbas 
-						 [enfMemInputLoiz] = "parentMemInputLoiz"
-						 (memLoizOutput) = "getChildOutput($event)"					
-						 [loizInheritedMethodForChild] = "loizParentMethodForChild"
-					></app-compmainbas>
+					<app-compmainbas> </app-compmainbas>
 				</div>  		  
 			</div>		
 	</div>  

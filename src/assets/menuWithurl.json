@@ -1,0 +1,62 @@
+[
+  {
+    "entete": [
+      {
+        "listemenuentete": [
+          {
+            "titreentete1": "Failles produits",
+            "urlentete1": "/faillesproduits"
+          },
+          {
+            "titreentete2": "Project Flaws Monitor",
+            "titredroite": "projectflawsmonitor"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "listemenugauche": [
+      {
+        "menugauche1": [
+          {
+            "titre": "Tous projets",
+            "urlt": "tousprojets"
+          },
+          {
+            "soustitreliste": [
+              {
+                "sstitre": "Liste Failles",
+                "urlst": "listefailles"
+              },
+              {
+                "sstitre": "Liste produits",
+                "urlst": "listeproduits"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "menugauche2": [
+          {
+            "titre": "Mes projets",
+            "urlt": "mesprojets"
+          },
+          {
+            "soustitreliste": [
+              {
+                "sstitre": "Saisie Projet",
+                "urlst": "sasieprojet"
+              },
+              {
+                "sstitre": "Saisie Produits",
+                "urlst": "saisieproduits"
+              }
+            ]
+          }
+        ]
+      }      
+    ]
+  }
+]

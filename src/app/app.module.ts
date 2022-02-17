@@ -12,6 +12,7 @@ import {LoizservhttpService} from './loizservhttp.service';
 import {HelperService} from './helper/helper.service';
 import { CellulenavgaucheComponent } from './cellulenavgauche/cellulenavgauche.component';
 import { CustdirmenuDirective } from './cellulenavgauche/dirtives/custdirmenu.directive';
+import { TousprojetsComponent } from './compmainbas/navigation/tousprojets/tousprojets.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { CustdirmenuDirective } from './cellulenavgauche/dirtives/custdirmenu.di
     CompmainbasComponent,
     VueappelhttpComponent,
     CellulenavgaucheComponent,
-    CustdirmenuDirective
+    CustdirmenuDirective,
+    TousprojetsComponent
   ],
   imports: [
     BrowserModule,
