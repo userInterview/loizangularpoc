@@ -70,6 +70,7 @@ export class CustdirmenuDirective {
                     let objSsTitre = elemSsTitre[keyEntrySub];
                     if (objSsTitre.hasOwnProperty('sstitre')) {
                       console.log("sstitre property exists", objSsTitre);
+                      
                       let sstitre = objSsTitre.sstitre;
                       if (objSsTitre.hasOwnProperty('urlst')) {
                         let stUrl = objSsTitre.urlst;

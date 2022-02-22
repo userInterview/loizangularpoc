@@ -1,10 +1,9 @@
-  <div appCustdirmenu class="tobottomnav">
+<!--<div appCustdirmenu class="tobottomnav">  -->
 
-    
-<!--    <nav>
-      <ul>
-          <li><a routerLink="/">Home</a></li>
-          <li><a routerLink="/tousprojets">liste projets</a></li>          
-      </ul>
-  </nav>-->
-  </div>
+<div class="tobottomnav">
+   
+      <div *ngFor="let menugaucheX of attrObjListeMenuGAuche">
+         <!--menugaucheX : {{firstValue(menugaucheX)}}-->
+         menugaucheX : {{convtost(firstValue(menugaucheX))}}         
+      </div>
+</div>
