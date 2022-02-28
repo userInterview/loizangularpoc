@@ -13,6 +13,7 @@ import {HelperService} from './helper/helper.service';
 import { CellulenavgaucheComponent } from './cellulenavgauche/cellulenavgauche.component';
 import { CustdirmenuDirective } from './cellulenavgauche/dirtives/custdirmenu.directive';
 import { TousprojetsComponent } from './compmainbas/navigation/tousprojets/tousprojets.component';
+import { ReadkeypipePipe } from './cellulenavgauche/pipe/readkeypipe.pipe';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { TousprojetsComponent } from './compmainbas/navigation/tousprojets/tousp
     VueappelhttpComponent,
     CellulenavgaucheComponent,
     CustdirmenuDirective,
-    TousprojetsComponent
+    TousprojetsComponent,
+    ReadkeypipePipe
   ],
   imports: [
     BrowserModule,
