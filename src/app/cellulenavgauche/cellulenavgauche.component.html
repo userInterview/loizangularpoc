@@ -5,7 +5,15 @@
       <div *ngFor="let menugaucheX of attrObjListeMenuGAuche">
          <!--menugaucheX : {{firstValue(menugaucheX)}}-->
          <!--menugaucheX : {{convtost(firstValue(menugaucheX))}}-->
-         menugauche {{ firstValue(menugaucheX) | readkeypipe }}         
+        <!-- menugauche {{ firstValue(menugaucheX) | readkeypipe }}-->
          
+
+         <div *ngFor="let elemtitre of firstValue(menugaucheX)">
+            <!--menugaucheX : {{firstValue(menugaucheX)}}-->
+            <!--menugaucheX : {{convtost(firstValue(menugaucheX))}}-->
+            elemtitre {{ convtost(elemtitre) }}         
+            
+         </div>
+
       </div>
 </div>
