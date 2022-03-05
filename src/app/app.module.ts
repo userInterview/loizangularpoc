@@ -14,6 +14,10 @@ import { CellulenavgaucheComponent } from './cellulenavgauche/cellulenavgauche.c
 import { CustdirmenuDirective } from './cellulenavgauche/dirtives/custdirmenu.directive';
 import { TousprojetsComponent } from './compmainbas/navigation/tousprojets/tousprojets.component';
 import { ReadkeypipePipe } from './cellulenavgauche/pipe/readkeypipe.pipe';
+import { DirurltitreDirective } from './cellulenavgauche/dirtives/dirurltitre.directive';
+import { DirurlsoustitreDirective } from './cellulenavgauche/dirtives/dirurlsoustitre.directive';
+import { ToutesfaillesComponent } from './compmainbas/navigation/toutesfailles/toutesfailles.component';
+import { TousproduitsComponent } from './compmainbas/navigation/tousproduits/tousproduits.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +27,11 @@ import { ReadkeypipePipe } from './cellulenavgauche/pipe/readkeypipe.pipe';
     CellulenavgaucheComponent,
     CustdirmenuDirective,
     TousprojetsComponent,
-    ReadkeypipePipe
+    ReadkeypipePipe,
+    DirurltitreDirective,
+    DirurlsoustitreDirective,
+    ToutesfaillesComponent,
+    TousproduitsComponent
   ],
   imports: [
     BrowserModule,

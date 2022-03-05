@@ -1,19 +1,34 @@
 <!--<div appCustdirmenu class="tobottomnav">  -->
 
 <div class="tobottomnav">
-   
-      <div *ngFor="let menugaucheX of attrObjListeMenuGAuche">
-         <!--menugaucheX : {{firstValue(menugaucheX)}}-->
-         <!--menugaucheX : {{convtost(firstValue(menugaucheX))}}-->
-        <!-- menugauche {{ firstValue(menugaucheX) | readkeypipe }}-->
-         
 
-         <div *ngFor="let elemtitre of firstValue(menugaucheX)">
+      <div *ngFor="let menugaucheX of attrObjListeMenuGAuche">
             <!--menugaucheX : {{firstValue(menugaucheX)}}-->
             <!--menugaucheX : {{convtost(firstValue(menugaucheX))}}-->
-            elemtitre {{ convtost(elemtitre) }}         
-            
-         </div>
+            <!-- menugauche {{ firstValue(menugaucheX) | readkeypipe }}-->
+
+
+            <div *ngFor="let elemtitre of firstValue(menugaucheX)">
+                  <!--menugaucheX : {{firstValue(menugaucheX)}}-->
+                  <!--menugaucheX : {{convtost(firstValue(menugaucheX))}}-->
+                  <!--<p>elemtitre {{ convtost(elemtitre) }}</p>
+            <p>{{elemtitre.titre != undefined? 'upwork' : (element.source == 2 ? 'refer from friend' : '')}}}</p>-->
+                  <!--On cherche si attribut "titre" ou "soustitreliste" est présent-->
+                  <!--elemtitre.titre : {{elemtitre.titre == undefined ? "pas de titre":"titre est \"" + elemtitre.titre +"\""}}-->
+                  <!--<div *ngIf="elemtitre.titre">{{elemtitre.titre}}</div>-->
+
+                  <div dirurltitre *ngIf="elemtitre.titre;then divTitre else divSsTitre"></div>
+                  <ng-template #divTitre><span (click)="navig(elemtitre.urlt)" >{{elemtitre.titre}}</span></ng-template>
+                  <ng-template #divSsTitre>
+                        <ul>
+                              <li (click)="navig(elemSousTitre.urlst)" *ngFor="let elemSousTitre of elemtitre.soustitreliste">
+                                    {{elemSousTitre.sstitre}}
+                              </li>
+                        </ul>
+
+                  </ng-template>
+
+            </div>
 
       </div>
 </div>

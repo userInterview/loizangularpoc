@@ -1,5 +1,5 @@
           import { Component, OnInit, ViewEncapsulation, AfterViewInit } from '@angular/core';
-
+          import { Router } from '@angular/router';
           import * as menuGauche from '../../assets/menuWithurl.json';
 
           @Component({
@@ -15,7 +15,7 @@
             attrObjListeMenuGAuche: any;
             attrObjListeMenuGAucheString: any;
 
-            constructor() { }
+            constructor( private router:Router )  { }
 
             ngAfterViewInit(): void {
               //console.log("<CellulenavgaucheComponent> - ngAfterViewInit()");
@@ -62,6 +62,11 @@
             //on le convertit en chaine
             let strAttr = (Object.keys(argobj)[0]).toString();
             return(argobj[strAttr]) ;
+           }
+
+           navig(strpath:string):void {
+              console.log("<navig>  vers : ",strpath) ;
+              this.router.navigateByUrl(strpath) ;
            }
 
           }
